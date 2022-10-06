@@ -144,7 +144,7 @@ class PlayersController extends Controller
         return new Response("Number of items $request->item_id : $name is 0");
       }
       $HaveCount = $playeritem[0]->count;
-      return new Response("You Only Have $HaveCount of item , But your input count is = $request->count!!");
+      return new Response("You Only Have $HaveCount of item , But your input count is = $request->count.");
     } else {
       $count = $playeritem[0]->count;
       $player = Player::find($id);
